@@ -53,11 +53,10 @@ body {
 
     button,
     .button {
-        height: 50px;
         color: #fff;
         font-weight: 400;
         text-shadow: $secondary;
-        padding: 1rem 1.875rem;
+        padding: 0.875rem 2.1875rem;
         background: linear-gradient(
             90deg,
             rgba(255, 15, 89, 1) 0%,
@@ -74,7 +73,13 @@ body {
 //visibility
 .hide-for-mobile {
     //hide for tablet and moble devices
+    @include breakpoint-down(medium) {
+        display: none;
+    }
 }
 .hide-for-desktop {
     //hide for desktop devices
+    @include breakpoint-up(large) {
+        display: none;
+    }
 }
