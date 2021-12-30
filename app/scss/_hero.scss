@@ -1,0 +1,26 @@
+.hero {
+    @include breakpoint-up(medium) {
+        &__image {
+            position: relative;
+            background-image: url('/images/hero.png') !important;
+            min-height: 48rem !important;
+        }
+    }
+    &__image {
+        position: relative;
+        background-image: url('/images/Z45A5416.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 35rem;
+    }
+
+    &__text {
+        text-align: center;
+        @include breakpoint-up(large) {
+            display: flex;
+            justify-content: end;
+            text-align: left;
+        }
+    }
+}
