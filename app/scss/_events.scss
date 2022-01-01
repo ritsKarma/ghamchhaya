@@ -6,6 +6,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @include breakpoint-up(large) {
+            justify-content: space-between;
+        }
     }
     &__intro {
         text-align: center;
@@ -14,10 +17,11 @@
     &__grid {
         width: 100%;
         display: flex;
+        justify-content: center;
         //
         //align-items: center;
         // flex-direction: column;
-        justify-content: center;
+
         //margin-bottom: 1rem;
 
         // flex-basis: 100%;
@@ -25,6 +29,9 @@
         @include breakpoint-up(medium) {
         }
         @include breakpoint-up(large) {
+        }
+        @include breakpoint-up(xlarge) {
+            justify-content: space-between;
         }
     }
 
@@ -47,25 +54,25 @@
         }
         display: flex;
 
-        justify-content: space-between;
         width: 18.75rem;
 
         box-shadow: 0px 0px 14px #363636;
         border-radius: 0.625rem;
         background-color: white;
         overflow: hidden;
+        justify-content: center;
         flex-wrap: wrap;
-        margin-bottom: 1rem;
+        margin: 1rem;
         text-align: center;
         // flex-basis: 100%;
         //flex-direction: column;
         align-items: center;
         //border: 1px solid white;
         @include breakpoint-up(medium) {
-            margin: 1rem;
-            //flex: 6.25rem;
+            //justify-content: space-evenly;
         }
         @include breakpoint-up(large) {
+            // margin: 0rem 0rem 1rem 0rem;
         }
     }
     &__icon img {

@@ -458,6 +458,14 @@ body .button:hover {
           align-items: center;
 }
 
+@media (min-width: 64em) {
+  .events__content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .events__intro {
   text-align: center;
 }
@@ -474,22 +482,30 @@ body .button:hover {
       flex-wrap: wrap;
 }
 
+@media (min-width: 87.5em) {
+  .events__grid {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .events__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 18.75rem;
   -webkit-box-shadow: 0px 0px 14px #363636;
           box-shadow: 0px 0px 14px #363636;
   border-radius: 0.625rem;
   background-color: white;
   overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin: 1rem;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -516,12 +532,6 @@ body .button:hover {
 
 .events__item .user-info h5 {
   margin: 0;
-}
-
-@media (min-width: 40em) {
-  .events__item {
-    margin: 1rem;
-  }
 }
 
 .events__icon img {
@@ -688,5 +698,137 @@ body .button:hover {
 
 .archive__button:hover {
   opacity: 0.75;
+}
+
+.footer {
+  background-color: #515151;
+  color: #fff;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 40em) {
+  .footer .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 1.875rem;
+}
+
+.footer__social {
+  width: 15rem;
+  margin-bottom: 1.875rem;
+}
+
+.footer__social a svg path {
+  -webkit-transition: fill 150ms ease-in-out;
+  transition: fill 150ms ease-in-out;
+}
+
+.footer__social a:hover svg path {
+  fill: #ff0f59;
+}
+
+.footer__social a:not(:last-child) {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.footer__links {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.875rem;
+}
+
+.footer__links a {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 2.25;
+}
+
+@media (min-width: 40em) {
+  .footer__links a:not(:last-child) {
+    margin-right: 1rem;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
+@media (min-width: 64em) {
+  .footer__links a:not(:last-child) {
+    margin-right: 1rem;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+}
+
+.footer__cta {
+  padding-top: 1rem;
+  margin-bottom: 1.875rem;
+}
+
+.footer__cta p {
+  margin-top: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
